@@ -1,0 +1,27 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+canvas#sceneCanvas {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#initMesh{
+  display: none;
+  height: 100%;
+  width: 600px;
+  position:absolute;
+  z-index: 99;
+  background-color: #fff;
+}
+.layui-layer-rim .layui-layer-content{
+  height: 400px!important;
+}
+.GoodsMesh{
+  text-align: center;
+}

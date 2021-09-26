@@ -1,0 +1,12 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+canvas#sceneCanvas {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    display: block;
+}

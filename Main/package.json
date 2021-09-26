@@ -1,0 +1,25 @@
+{
+  "name": "packingplan-3d",
+  "version": "1.0.0",
+  "description": "装箱3D展示",
+  "main": "dist/js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "if exist .\\dist\\js ( del .\\dist\\js\\main.js* /q /f /s )",
+    "prebuild": "npm run clean",
+    "build": "webpack --config ./config/webpack.prod.js",
+    "postbuild": "start Explorer .\\dist",
+    "predev": "npm run clean",
+    "dev": "webpack serve --config ./config/webpack.dev.js"
+  },
+  "author": "SoftPx",
+  "license": "ISC",
+  "devDependencies": {
+    "javascript-obfuscator": "^2.13.0",
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-obfuscator": "^3.3.1"
+  },
+  "dependencies": {}
+}

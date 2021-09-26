@@ -1,0 +1,34 @@
+{
+  "name": "threejs-laboratory",
+  "version": "1.0.0",
+  "description": "ThreeJs入门示例",
+  "main": "dist/js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "if exist .\\dist\\js ( del .\\dist\\js\\main.js* /q /f /s )",
+    "prebuild": "npm run clean",
+    "build": "webpack --config ./config/webpack.prod.js",
+    "postbuild": "start Explorer .\\dist",
+    "predev": "npm run clean",
+    "dev": "webpack serve --config ./config/webpack.dev.js"
+  },
+  "author": "SoftPx",
+  "license": "ISC",
+  "devDependencies": {
+    "javascript-obfuscator": "^2.13.0",
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-obfuscator": "^3.3.1"
+  },
+  "dependencies": {
+    "@tweenjs/tween.js": "^18.6.4",
+    "glsl-noise": "0.0.0",
+    "glslify": "^7.1.1",
+    "jquery": "^3.6.0",
+    "layer-src": "^3.5.1",
+    "layui": "^2.6.8",
+    "tween": "^0.9.0",
+    "tweenjs": "^1.0.2"
+  }
+}
